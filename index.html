@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Drawing a Rectangle on Canvas</title>
+        
+    </head>
+    <h1>Rectangle</h1>
+    <body>
+        <canvas id="rectangle" width="300" height="300"></canvas>
+    </body>
+
+    <script>
+    var rc = document.getElementById('rectangle').getContext('2d');
+
+    rc.fillStyle = "blue";
+    rc.rect(50,100,200,100);
+    rc.fill();
+    </script>
+    <style>
+        canvas{
+            background: #ddd;
+        }
+    </style>
+</html>
